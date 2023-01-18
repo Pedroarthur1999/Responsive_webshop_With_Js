@@ -1,26 +1,35 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+* {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-header .container{
-    flex-direction:column ;
+
+header .container {
+    flex-direction: column;
     justify-content: flex-start;
 }
-.max-width{
+
+.max-width {
     width: 100%;
     min-height: auto;
 }
-.bg{
+
+.bg {
     background: url(_images/bg-2.png) no-repeat;
     background-size: cover;
     width: 100%;
     height: auto;
 }
-.container{
+
+.container {
     max-width: 1680px;
     margin: 0 auto;
     display: flex;
@@ -28,30 +37,56 @@ header .container{
     justify-content: center;
     min-height: 95vh;
 }
-.menu{
-    display: flex;
-    flex-direction: row;
+
+.menu {
+    background-color: rgb(192, 192, 192);
     width: 100%;
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    background-color: gray;
 }
-.logo{
+
+.menu-desktop {
+    display: inline;
+
+}
+
+.logo {
     background: url(_images/logo-roupa.png) no-repeat;
     background-size: contain;
     z-index: 9;
     position: relative;
     width: 80px;
     height: 40px;
-    top: 10px;
-    left: 10px;
+    left: 2rem;
+    top: 7.5px;
 }
-a{
+
+a {
     text-decoration: none;
     list-style: none;
+    color: black;
+    transition-duration: .5s;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
 }
-ul{
+
+a:hover {
+    color: aliceblue;
+    transition-duration: .5s;
+}
+
+ul {
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    padding: 10px;
+}
+
+li {
+    padding: 1rem;
+}
+.novidades{
+    width: 100%;
+    height: 100%;
 }
