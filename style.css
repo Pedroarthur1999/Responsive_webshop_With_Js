@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Sofia+Sans+Condensed:ital,wght@1,600&display=swap');
 
 * {
     padding: 0;
@@ -48,7 +49,9 @@ header .container {
 
 .menu-desktop {
     display: inline;
-
+}
+.menu-mobile{
+    display: none;
 }
 
 .logo {
@@ -56,10 +59,11 @@ header .container {
     background-size: contain;
     z-index: 9;
     position: relative;
-    width: 80px;
-    height: 40px;
-    left: 2rem;
-    top: 7.5px;
+    width: 7rem;
+    height: 2rem;
+    left: 15px;
+    top: 5px;
+    padding: 10px;
 }
 
 a {
@@ -86,7 +90,93 @@ ul {
 li {
     padding: 1rem;
 }
-.novidades{
-    width: 100%;
+
+.call {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.novidades {
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+header .novidades h1{
+    position: relative;
+}
+header .novidades {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+header .novidades .text p{
+    text-align: start;
+    margin-top: 50px;
+}
+
+.image-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.image-right img {
+    width: 70%;
+    object-fit: contain;
+}
+.txt-pq{
+    font-size: .5rem;
+}
+.txt-md{
+    font-size: 1.5rem;
+}
+.txt-gd {
+    font-size: 4.5rem;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    color: rgb(63, 0, 145);
+}
+
+header button {
+    border: none;
+    background-color: rgb(14 0 74 / 84%);
+    position: relative;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+    
+header .image-right img{
+    width: 70%;
+}
+
+/* Responsive */
+
+@media  screen and (max-width:720px) {
+    html{
+        font-size: 65%;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+        width: 150px;
+        height: 10px;
+        background-color: yellow;
+        z-index: 1000 ;
+    }
 }
